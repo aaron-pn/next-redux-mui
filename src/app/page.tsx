@@ -286,7 +286,12 @@ const Home = () => {
             />
           </Grid>
           <Grid size={12}>
-            <Button type="submit" variant="contained" fullWidth>
+            <Button
+              type="submit"
+              disabled={isLoading}
+              variant="contained"
+              fullWidth
+            >
               Submit
             </Button>
           </Grid>
